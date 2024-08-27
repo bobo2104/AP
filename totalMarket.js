@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Market Overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Total Market Overview</h1>
+        <div id="total-market-container">
+            <p>Loading data...</p>
+        </div>
+    </div>
+
+    <script src="totalMarket.js"></script>
+</body>
+</html>
