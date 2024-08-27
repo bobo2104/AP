@@ -1,22 +1,43 @@
-/* Body and Containers are already styled in previous CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', sans-serif;
+    background: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light grey text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
 
-.welcome-container h1 {
-    font-size: 48px;
+.container, .welcome-container {
+    background: #333; /* Consistent background for both pages */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 600px; /* Slightly wider for welcome page content */
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 40px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #ff0000; /* Bright red text */
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    transform: rotate(-1deg); /* Slight tilt for dynamic feel */
+    color: #ff0000; /* Toyota Red */
+    transform: rotate(-2deg); /* Consistent with index page */
 }
 
 .intro-text {
     font-size: 22px;
     margin-bottom: 40px;
-    color: #e0e0e0; /* Soft grey to contrast with background */
+    color: #e0e0e0; /* Soft grey for readability */
     line-height: 1.6;
-    font-style: italic; /* Italics for emphasis */
-    text-shadow: 1px 1px 2px #000; /* Subtle shadow to lift text */
+    font-style: italic;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .button-container {
@@ -30,7 +51,7 @@
     display: inline-block;
     padding: 20px;
     margin: 10px;
-    background: #ff0000; /* Bright red background */
+    background: #ff0000;
     color: #fff;
     font-size: 22px;
     text-transform: uppercase;
@@ -38,12 +59,12 @@
     text-decoration: none;
     border-radius: 8px;
     transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .market-btn:hover {
     background: #d40000;
-    transform: translateY(-5px); /* Slight lift effect */
+    transform: translateY(-5px);
 }
 
 @media (min-width: 768px) {
