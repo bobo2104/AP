@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: #f0f0f0;
-    color: #333;
+    font-family: 'Arial Black', sans-serif; /* Strong, bold typeface */
+    background: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light grey text for contrast */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,29 +12,95 @@ body {
 }
 
 .container, .welcome-container {
-    background: #fff;
+    background: #333;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     width: 100%;
     text-align: center;
+    text-transform: uppercase; /* Bold, uppercase text */
+    letter-spacing: 2px;
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 20px;
     font-weight: bold;
-    letter-spacing: 2px;
-    color: #EB0A1E;
-}
-
-.intro-text {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #555;
+    color: #ff0000; /* Bright red for high contrast */
+    transform: rotate(-2deg); /* Slight rotation for a rebellious feel */
 }
 
 input[type="password"] {
     width: 100%;
     padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #ff0000;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #222;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    text-align: center; /* Center text in input field */
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.submit-btn:hover {
+    background: #d40000;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.forgot-password {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #d40000;
+}
+
+.welcome-container .market-btn {
+    display: block;
+    padding: 15px;
+    margin: 15px 0;
+    background: #ff0000;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.welcome-container .market-btn:hover {
+    background: #d40000;
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+@media (min-width: 768px) {
+    .welcome-container .market-btn {
+        width: 45%;
+        margin: 10px;
+        display: inline-block;
+    }
+}
