@@ -81,6 +81,23 @@ a.forgot-password:hover {
     background: #c00;
 }
 
+.segment-row {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.segment-row strong {
+    font-weight: bold;
+    color: #EB0A1E;
+}
+
 @media (min-width: 768px) {
     .button-container {
         flex-direction: row;
@@ -90,5 +107,9 @@ a.forgot-password:hover {
     .market-btn {
         flex: 1;
         margin: 0 10px;
+    }
+
+    .segment-row {
+        justify-content: space-around;
     }
 }
