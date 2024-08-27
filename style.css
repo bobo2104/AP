@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial Black', sans-serif;
-    background: #1a1a1a; /* Dark background */
-    color: #e0e0e0; /* Light grey text for contrast */
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text for readability */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,32 +12,78 @@ body {
 }
 
 .container, .welcome-container {
-    background: #333; /* Consistent background for both pages */
+    background: #ffffff; /* White background for clean look */
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 600px; /* Slightly wider for welcome page content */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 600px;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px; /* Slightly tighter letter spacing */
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #ff0000; /* Toyota Red */
-    transform: rotate(-2deg); /* Consistent with index page */
+    color: #EB0A1E; /* Toyota Red */
 }
 
 .intro-text {
-    font-size: 22px;
-    margin-bottom: 40px;
-    color: #e0e0e0; /* Soft grey for readability */
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555; /* Medium grey for subtler text */
     line-height: 1.6;
-    font-style: italic;
-    text-shadow: 1px 1px 2px #000;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #EB0A1E; /* Toyota Red border */
+    border-radius: 4px;
+    font-size: 18px;
+    background: #f9f9f9;
+    color: #333;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #EB0A1E; /* Toyota Red */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background: #c00c1e; /* Slightly darker red on hover */
+    transform: scale(1.02); /* Slight scale on hover */
+}
+
+.forgot-password {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #EB0A1E;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #c00c1e;
+}
+
+.welcome-container h1 {
+    font-size: 40px;
+    color: #EB0A1E; /* Toyota Red */
 }
 
 .button-container {
@@ -51,20 +97,19 @@ h1 {
     display: inline-block;
     padding: 20px;
     margin: 10px;
-    background: #ff0000;
+    background: #EB0A1E;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-decoration: none;
     border-radius: 8px;
     transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .market-btn:hover {
-    background: #d40000;
-    transform: translateY(-5px);
+    background: #c00c1e;
+    transform: translateY(-3px); /* Slight lift on hover */
 }
 
 @media (min-width: 768px) {
