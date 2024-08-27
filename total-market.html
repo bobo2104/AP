@@ -3,76 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Total Market Insights</title>
+    <title>Total Market Overview</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Link to a chart library like Chart.js or Google Charts -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="market-container">
-        <header class="market-header">
-            <h1>Total Market Insights</h1>
-            <p class="market-subheading">Comprehensive analysis of the total automotive market over the past years, with future predictions.</p>
-        </header>
-        
-        <section class="market-data">
-            <h2>Market Trends Overview</h2>
-            <canvas id="marketChart"></canvas> <!-- Placeholder for the chart -->
-        </section>
-
-        <section class="market-insights">
-            <h2>Key Insights</h2>
-            <div class="insight-cards">
-                <div class="insight-card">
-                    <h3>Growth Trend</h3>
-                    <p>Over the past 5 years, the total market has grown by 15% annually.</p>
-                </div>
-                <div class="insight-card">
-                    <h3>Segment Performance</h3>
-                    <p>The SUV segment has outperformed others, with a 25% market share.</p>
-                </div>
-                <div class="insight-card">
-                    <h3>Rental Market Influence</h3>
-                    <p>The rental market has contributed significantly to overall sales, particularly in urban areas.</p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="market-footer">
-            <nav class="footer-nav">
-                <a href="mainstream-market.html">Mainstream Market</a>
-                <a href="premium-market.html">Premium Market</a>
-                <a href="lcv-market.html">LCV Market</a>
-                <a href="retail-market.html">Retail Market</a>
-                <a href="rental-market.html">Rental Market</a>
-                <a href="welcome.html">Home</a>
-            </nav>
-            <p>&copy; 2024 Toyota Market Insights. All rights reserved.</p>
-        </footer>
+    <div class="container">
+        <h1>Total Market Overview</h1>
+        <div id="total-market-container">
+            <p>Placeholder for Total Market Data</p>
+            <!-- Data will be dynamically inserted here by JavaScript -->
+        </div>
     </div>
 
-    <!-- Script to create a chart -->
-    <script>
-        var ctx = document.getElementById('marketChart').getContext('2d');
-        var marketChart = new Chart(ctx, {
-            type: 'bar', // Example chart type
-            data: {
-                labels: ['2019', '2020', '2021', '2022', '2023'],
-                datasets: [{
-                    label: 'Total Market Sales',
-                    data: [50000, 60000, 70000, 80000, 90000], // Example data
-                    backgroundColor: '#EB0A1E',
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
+    <script src="totalMarket.js"></script>
 </body>
 </html>
