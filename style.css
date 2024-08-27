@@ -16,6 +16,7 @@ body {
     margin: 40px auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Headings */
@@ -73,11 +74,14 @@ a.forgot-password:hover {
     justify-content: center; /* Center the buttons horizontally */
     gap: 15px;
     margin-top: 20px; /* Add some space above the buttons */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /* Market Buttons */
 .market-btn {
-    padding: 15px 25px; /* Adjust padding for a more balanced button size */
+    flex: 1 1 calc(50% - 30px); /* Make buttons take up half the container width minus gaps */
+    padding: 15px;
     background: #EB0A1E;
     color: #fff;
     border-radius: 5px;
@@ -123,5 +127,27 @@ a.forgot-password:hover {
 
     .segment-row {
         justify-content: space-around;
+    }
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .container, .welcome-container {
+        padding: 20px;
+        margin: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p.intro-text {
+        font-size: 16px;
+    }
+
+    .market-btn {
+        flex: 1 1 100%; /* Make each button take up the full width */
+        margin-bottom: 10px;
     }
 }
