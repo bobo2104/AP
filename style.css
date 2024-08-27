@@ -1,3 +1,4 @@
+/* Global Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
@@ -6,28 +7,32 @@ body {
     color: #333;
 }
 
+/* Container Styles */
 .container, .welcome-container {
     background: #ffffff;
     padding: 40px;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 800px;
     margin: 40px auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+/* Headings */
 h1 {
     color: #EB0A1E;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
+/* Intro Text */
 p.intro-text {
     font-size: 18px;
     margin-bottom: 30px;
     color: #666;
 }
 
+/* Input and Buttons */
 input[type="password"], .submit-btn {
     width: 100%;
     padding: 15px;
@@ -61,19 +66,24 @@ a.forgot-password:hover {
     text-decoration: underline;
 }
 
+/* Button Container */
 .button-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line if they overflow */
+    justify-content: center; /* Center the buttons horizontally */
     gap: 15px;
+    margin-top: 20px; /* Add some space above the buttons */
 }
 
+/* Market Buttons */
 .market-btn {
-    padding: 15px;
+    padding: 15px 25px; /* Adjust padding for a more balanced button size */
     background: #EB0A1E;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
+    text-align: center; /* Ensure the text is centered */
     transition: background 0.3s ease;
 }
 
@@ -81,6 +91,7 @@ a.forgot-password:hover {
     background: #c00;
 }
 
+/* Segment Row Styling */
 .segment-row {
     margin: 10px 0;
     padding: 15px;
@@ -98,6 +109,7 @@ a.forgot-password:hover {
     color: #EB0A1E;
 }
 
+/* Responsive Design */
 @media (min-width: 768px) {
     .button-container {
         flex-direction: row;
