@@ -1,106 +1,59 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial Black', sans-serif; /* Strong, bold typeface */
-    background: #1a1a1a; /* Dark background */
-    color: #e0e0e0; /* Light grey text for contrast */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-}
+/* Body and Containers are already styled in previous CSS */
 
-.container, .welcome-container {
-    background: #333;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase; /* Bold, uppercase text */
-    letter-spacing: 2px;
-}
-
-h1 {
-    font-size: 40px;
+.welcome-container h1 {
+    font-size: 48px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: #ff0000; /* Bright red for high contrast */
-    transform: rotate(-2deg); /* Slight rotation for a rebellious feel */
-}
-
-input[type="password"] {
-    width: 100%;
-    padding: 15px;
-    margin: 20px 0;
-    border: 2px solid #ff0000;
-    border-radius: 4px;
-    font-size: 20px;
-    font-weight: bold;
-    background: #222;
-    color: #fff;
+    color: #ff0000; /* Bright red text */
     text-transform: uppercase;
-    letter-spacing: 1px;
-    box-sizing: border-box;
-    text-align: center; /* Center text in input field */
+    letter-spacing: 3px;
+    transform: rotate(-1deg); /* Slight tilt for dynamic feel */
 }
 
-.submit-btn {
-    width: 100%;
-    padding: 15px;
-    background: #ff0000;
+.intro-text {
+    font-size: 22px;
+    margin-bottom: 40px;
+    color: #e0e0e0; /* Soft grey to contrast with background */
+    line-height: 1.6;
+    font-style: italic; /* Italics for emphasis */
+    text-shadow: 1px 1px 2px #000; /* Subtle shadow to lift text */
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.market-btn {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    background: #ff0000; /* Bright red background */
     color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 2px;
-}
-
-.submit-btn:hover {
-    background: #d40000;
-    transform: scale(1.05); /* Slight scale on hover */
-}
-
-.forgot-password {
-    margin-top: 15px;
-    font-size: 16px;
-    color: #ff0000;
     text-decoration: none;
-}
-
-.forgot-password:hover {
-    color: #d40000;
-}
-
-.welcome-container .market-btn {
-    display: block;
-    padding: 15px;
-    margin: 15px 0;
-    background: #ff0000;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
 }
 
-.welcome-container .market-btn:hover {
+.market-btn:hover {
     background: #d40000;
     transform: translateY(-5px); /* Slight lift effect */
 }
 
 @media (min-width: 768px) {
-    .welcome-container .market-btn {
-        width: 45%;
-        margin: 10px;
-        display: inline-block;
+    .market-btn {
+        width: calc(33% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .market-btn {
+        width: 100%;
     }
 }
