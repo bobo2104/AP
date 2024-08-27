@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toyota Secure Access</title>
+    <title>Enter Password</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <img src="https://i.ibb.co/yBmnCkv/logo-toyota.jpg" alt="Toyota Logo" class="logo">
+        <img src="logo-toyota.jpg" alt="Toyota Logo" class="logo">
         <h1>Enter Password</h1>
         <form id="loginForm">
             <input type="password" id="password" placeholder="Enter your password">
@@ -21,8 +21,8 @@
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const password = document.getElementById('password').value;
-            if (password === 'w2wf') { // Replace 'w2wf' with your actual password
-                window.location.href = 'welcome.html'; // Redirect to your protected page
+            if (password === 'w2wf') {
+                window.location.href = 'welcome.html';
             } else {
                 alert('Incorrect password, please try again.');
             }
