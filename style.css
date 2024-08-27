@@ -8,11 +8,11 @@ body {
 }
 
 /* Container Styles */
-.container {
+.container, .welcome-container {
     background: #ffffff;
     padding: 40px;
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 800px;
     margin: 40px auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -35,46 +35,49 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Form Input */
-input[type="password"] {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 2px solid #EB0A1E;
-    border-radius: 5px;
+/* Intro Text */
+p.intro-text {
     font-size: 18px;
-    box-sizing: border-box;
+    margin-bottom: 30px;
+    color: #666;
 }
 
-/* Submit Button */
-.submit-btn {
-    width: 100%; /* Ensure the button spans the full width of the container */
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Market Buttons */
+.market-btn {
+    flex: 1 1 calc(33.333% - 30px);
     padding: 15px;
-    margin-top: 10px;
-    background-color: #EB0A1E;
+    background: #EB0A1E;
     color: #fff;
-    border: none;
     border-radius: 5px;
+    text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-align: center;
+    transition: background 0.3s ease;
     box-sizing: border-box;
 }
 
-.submit-btn:hover {
-    background-color: #c00;
+.market-btn:hover {
+    background: #c00;
 }
 
-/* Forgot Password Link */
-a.forgot-password {
-    color: #EB0A1E;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 15px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .market-btn {
+        flex: 1 1 calc(50% - 20px);
+    }
 }
 
-a.forgot-password:hover {
-    color: #c00;
-    text-decoration: underline;
+@media (max-width: 480px) {
+    .market-btn {
+        flex: 1 1 100%;
+    }
 }
