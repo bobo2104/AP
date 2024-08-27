@@ -1,161 +1,94 @@
-/* General Styles */
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark grey text for readability */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+    color: #333;
 }
 
-.container, .welcome-container, .market-container {
-    background: #ffffff; /* White background for clean look */
+.container, .welcome-container {
+    background: #ffffff;
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px;
     max-width: 600px;
-    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px; /* Slightly tighter letter spacing */
 }
 
-/* Headings */
 h1 {
+    color: #EB0A1E;
     font-size: 36px;
     margin-bottom: 20px;
-    font-weight: bold;
-    color: #EB0A1E; /* Toyota Red */
 }
 
-.welcome-container h1, .market-container h1 {
-    font-size: 40px;
-    color: #EB0A1E; /* Toyota Red */
-    text-transform: uppercase;
-    letter-spacing: 2px; /* Adjust spacing for emphasis */
-    margin-bottom: 20px;
-}
-
-.market-container h2 {
-    color: #EB0A1E; /* Toyota Red */
-    font-size: 28px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-/* Text */
-.intro-text, .market-subheading {
+p.intro-text {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #555; /* Medium grey for subtler text */
-    line-height: 1.6;
+    color: #666;
 }
 
-/* Input Fields */
-input[type="password"] {
+input[type="password"], .submit-btn {
     width: 100%;
     padding: 15px;
-    margin: 20px 0;
-    border: 2px solid #EB0A1E; /* Toyota Red border */
-    border-radius: 4px;
+    margin: 10px 0;
+    border: 2px solid #EB0A1E;
+    border-radius: 5px;
     font-size: 18px;
-    background: #f9f9f9;
-    color: #333;
-    text-align: center;
-    box-sizing: border-box;
 }
 
-/* Buttons */
-.submit-btn, .market-btn {
-    width: 100%;
-    padding: 15px;
-    background: #EB0A1E; /* Toyota Red */
+.submit-btn {
+    background-color: #EB0A1E;
     color: #fff;
-    font-size: 18px;
     font-weight: bold;
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover, .market-btn:hover {
-    background: #c00c1e; /* Slightly darker red on hover */
-    transform: scale(1.02); /* Slight scale on hover */
+.submit-btn:hover {
+    background-color: #c00;
 }
 
-.forgot-password {
-    margin-top: 15px;
-    font-size: 14px;
+a.forgot-password {
     color: #EB0A1E;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.forgot-password:hover {
-    color: #c00c1e;
-}
-
-/* Market Insight Specific */
-.market-container {
-    max-width: 1000px; /* Slightly wider for market insight pages */
-    margin: 20px auto;
-    color: #333;
-}
-
-.insight-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.insight-card {
-    flex: 1 1 calc(33% - 40px);
-    background: #f9f9f9;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    text-align: left;
-}
-
-.insight-card h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
-.footer-nav a {
-    color: #EB0A1E; /* Toyota Red */
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-nav a:hover {
+a.forgot-password:hover {
+    color: #c00;
     text-decoration: underline;
 }
 
-.market-footer {
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #ddd;
-    color: #888;
-    text-align: center;
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-/* Media Queries */
+.market-btn {
+    padding: 15px;
+    background: #EB0A1E;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.market-btn:hover {
+    background: #c00;
+}
+
 @media (min-width: 768px) {
-    .market-btn {
-        width: calc(33% - 30px);
+    .button-container {
+        flex-direction: row;
+        justify-content: space-around;
     }
-}
 
-@media (max-width: 768px) {
     .market-btn {
-        width: 100%;
+        flex: 1;
+        margin: 0 10px;
     }
 }
