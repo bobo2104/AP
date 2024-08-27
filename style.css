@@ -8,7 +8,7 @@ body {
 }
 
 /* Container Styles */
-.container, .welcome-container {
+.container {
     background: #ffffff;
     padding: 40px;
     border-radius: 10px;
@@ -23,6 +23,9 @@ body {
 .logo {
     max-width: 150px;
     margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Headings */
@@ -32,14 +35,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Intro Text */
-p.intro-text {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #666;
-}
-
-/* Input and Buttons */
+/* Form Input */
 input[type="password"] {
     width: 100%;
     padding: 15px;
@@ -50,6 +46,7 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
+/* Submit Button */
 .submit-btn {
     width: 100%; /* Ensure the button spans the full width of the container */
     padding: 15px;
@@ -80,89 +77,4 @@ a.forgot-password {
 a.forgot-password:hover {
     color: #c00;
     text-decoration: underline;
-}
-
-/* Button Container */
-.button-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows buttons to wrap to the next line if they overflow */
-    justify-content: center; /* Center the buttons horizontally */
-    gap: 15px;
-    margin-top: 20px; /* Add some space above the buttons */
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-/* Market Buttons */
-.market-btn {
-    flex: 1 1 calc(50% - 30px); /* Make buttons take up half the container width minus gaps */
-    padding: 15px;
-    background: #EB0A1E;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center; /* Ensure the text is centered */
-    transition: background 0.3s ease;
-}
-
-.market-btn:hover {
-    background: #c00;
-}
-
-/* Segment Row Styling */
-.segment-row {
-    margin: 10px 0;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-}
-
-.segment-row strong {
-    font-weight: bold;
-    color: #EB0A1E;
-}
-
-/* Responsive Design */
-@media (min-width: 768px) {
-    .button-container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .market-btn {
-        flex: 1;
-        margin: 0 10px;
-    }
-
-    .segment-row {
-        justify-content: space-around;
-    }
-}
-
-/* Mobile Specific Styles */
-@media (max-width: 768px) {
-    .container, .welcome-container {
-        padding: 20px;
-        margin: 20px;
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    p.intro-text {
-        font-size: 16px;
-    }
-
-    .market-btn {
-        flex: 1 1 100%; /* Make each button take up the full width */
-        margin-bottom: 10px;
-    }
 }
